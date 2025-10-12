@@ -9,7 +9,7 @@
   max-width: 230px;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid var(--color-accent3);
+  border: 1px solid var(--color-border);
   filter: grayscale(100%);
 }
 

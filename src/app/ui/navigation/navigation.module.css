@@ -12,7 +12,7 @@
   height: var(--nav-height);
   /* max-width: 80rem; */
   /* margin: 0 auto; */
-  background-color: var(--color-primary-tint);
+  background-color: var(--color-background);
 }
 
 .logo {
@@ -33,7 +33,7 @@
   right: 0;
   width: 55%;
   /* background-color: var(--color-lightest); */
-  background-color: var(--color-primary-tint);
+  background-color: var(--color-background);
 
   transition: all 0.3s ease-in-out;
   transform: translateX(100%);
@@ -48,7 +48,7 @@
 .logo_link,
 .logo_link:link,
 .logo_link:visited {
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-size: 1.4rem;
   text-decoration: none;
   transition: all 0.3s;
@@ -56,7 +56,7 @@
 
 .logo_link:hover,
 .logo_link:active {
-  color: var(--color-accent2);
+  color: var(--color-text-secondary);
 }
 
 .nav__list {
@@ -75,7 +75,7 @@
   display: block;
   position: relative;
   overflow: hidden;
-  color: var(--color-accent2);
+  color: var(--color-text-secondary);
   font-size: 1.4rem;
   text-decoration: none;
   transition: all 0.3s;
@@ -83,7 +83,7 @@
 
 .nav__link:hover,
 .nav__link:active {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 /* HAMBURGER MENU */
@@ -91,7 +91,7 @@
   display: flex;
   align-items: center;
   align-self: end;
-  fill: var(--color-darkest);
+  fill: var(--color-primary);
   background: transparent;
   border: none;
   cursor: pointer;

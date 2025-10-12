@@ -15,27 +15,14 @@
   --font-weight-bold: 700;
 
   /* Colors */
-  --color-primary: hsl(0, 0%, 100%); /* Interactivity */
-  --color-primary-tint: hsl(0, 0%, 0%);
-  --color-primary-shade: hsl(224, 72%, 35%);
-  --color-background: hsl(0, 3%, 6%);
-  /* --color-background: #101014; */
-
-  --color-darkest: hsl(0, 0%, 100%); /* Heading text */
-  --color-dark: hsl(224, 27%, 24%); /* Secondary text */
-  --color-medium: hsl(224, 18%, 43%); /* Non-decorative borders */
-  --color-light: hsl(224, 24%, 74%); /* Decorative borders*/
-  --color-lightest: hsl(224, 24%, 96%); /* Background */
-  --color-white: #fff; /* Alternate backgrounds */
+  --color-primary: hsl(0, 0%, 98%);
 
   /* New */
-  --color-accent: #fafafa;
-  --color-accent2: #999999;
+  --color-text: hsla(0, 0%, 98%, 0.722);
+  --color-text-secondary: hsl(0, 0%, 60%);
   --color-background: hsl(0, 0%, 0%);
-  --color-accent3: #474747;
-  --color-button-hover: #fafafa19;
-  --color-text: #fafafab8;
-  /* --color-subtitle: rgba(250, 250, 250, 0.902); */
+  --color-border: #474747;
+  --color-button-hover: hsla(0, 0%, 98%, 0.098);
 
   --nav-height: 5.2rem;
 
