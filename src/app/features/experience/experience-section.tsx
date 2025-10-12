@@ -19,7 +19,7 @@ export default function ExperienceSection() {
                 <h4 className={styles.title}>
                   Lead Full Stack Developer
                 </h4>
-                <p className={styles.duration}>Nov — Present</p>
+                <p className={styles.duration}>Nov 2024 — Present</p>
               </div>
             </div>
             <p className={styles.description}>
@@ -42,7 +42,7 @@ export default function ExperienceSection() {
               <div className={styles.circle}></div>
               <div className={styles.content}>
                 <h4 className={styles.title}>Thesis</h4>
-                <p className={styles.duration}>June — Nov</p>
+                <p className={styles.duration}>Jun 2024 — Nov 2024</p>
               </div>
             </div>
             <p className={styles.description}>
@@ -63,7 +63,7 @@ export default function ExperienceSection() {
               <div className={styles.circle}></div>
               <div className={styles.content}>
                 <h4 className={styles.title}>Full Stack Developer Trainee</h4>
-                <p className={styles.duration}>Jan — June</p>
+                <p className={styles.duration}>Jan 2024 — Jun 2024</p>
               </div>
             </div>
             <p className={styles.description}>
@@ -71,9 +71,9 @@ export default function ExperienceSection() {
             </p>
             <ul className={styles.stack}>
               <li>.NET</li>
+              <li>HTML/CSS</li>
               <li>JavaScript</li>
               <li>Angular</li>
-              <li>HTML/CSS</li>
               <li>Azure</li>
               <li>Azure DevOps</li>
             </ul>
