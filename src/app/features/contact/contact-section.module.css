@@ -1,0 +1,19 @@
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.link {
+  /* display: flex !important; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* gap: 0.8rem; */
+}
+
+@media screen and (max-width: 700px) {
+  .links {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+}

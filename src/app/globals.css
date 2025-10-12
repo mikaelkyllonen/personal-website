@@ -15,21 +15,50 @@
   --font-weight-bold: 700;
 
   /* Colors */
-  --color-primary: hsl(224, 72%, 50%); /* Interactivity */
-  --color-primary-tint: hsla(224, 72%, 50%, 0.1);
+  --color-primary: hsl(0, 0%, 100%); /* Interactivity */
+  --color-primary-tint: hsl(0, 0%, 0%);
   --color-primary-shade: hsl(224, 72%, 35%);
+  --color-background: hsl(0, 3%, 6%);
+  /* --color-background: #101014; */
 
-  --color-darkest: hsl(224, 58%, 10%); /* Heading text */
+  --color-darkest: hsl(0, 0%, 100%); /* Heading text */
   --color-dark: hsl(224, 27%, 24%); /* Secondary text */
   --color-medium: hsl(224, 18%, 43%); /* Non-decorative borders */
   --color-light: hsl(224, 24%, 74%); /* Decorative borders*/
   --color-lightest: hsl(224, 24%, 96%); /* Background */
   --color-white: #fff; /* Alternate backgrounds */
 
-  --nav-height: 6.4rem;
+  /* New */
+  --color-accent: #fafafa;
+  --color-accent2: #999999;
+  --color-background: hsl(0, 0%, 0%);
+  --color-accent3: #474747;
+  --color-button-hover: #fafafa19;
+  --color-text: #fafafab8;
+  /* --color-subtitle: rgba(250, 250, 250, 0.902); */
 
-  background-color: var(--color-lightest);
+  --nav-height: 5.2rem;
+
+  background-color: var(--color-background);
   color: var(--color-dark);
 
   scroll-behavior: smooth;
+}
+
+body {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+@media screen and (min-width: 632px) {
+  body {
+    padding: 0 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
 }

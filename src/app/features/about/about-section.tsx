@@ -1,40 +1,36 @@
 import Section from "@/app/ui/section/section";
+import me from "@/../public/images/me.png";
+import Image from "next/image";
+import styles from "./about-section.module.css";
 
 export default function AboutSection() {
   return (
     <Section id="about">
-      <h2>About me</h2>
+      <h2>About</h2>
+      <div className={styles.content}>
+      <div className={styles.imageContainer}>
+        <Image 
+          src={me} 
+          alt="Mikael Kyllönen" 
+          width={230}
+          height={230}
+          className={styles.image} 
+          priority 
+        />
+      </div>
+      <div className={styles.text}>
       <p>
-        Hi there! I'm Mikael, an enthusiastic student on a journey to becoming a
-        skilled software developer.
+        My passion for software development began in 2019 when I created a VBA-based
+        reporting system for our school's lobby service. Though the solution was
+        simple, I discovered I loved the problem-solving process and the rewarding
+        feeling of creating something useful for others.
       </p>
       <p>
-        I caught the bug to writing software during my studies in 2019 when I
-        had the opportunity to be part of a team to establish a lobby service at
-        our school, where students would be responsible for monitoring the lobby
-        as well as creating reports of the events that took place. As a side
-        project, I became interested in trying to create a reporting system to
-        ensure uniformity in the reports.
+        Since then, I've continued exploring software development, and this path
+        continues to excite and inspire me in my work today.
       </p>
-      <p>
-        My solution was VBA (Visual Basic for Applications) in Excel, which I
-        used to create a form that would generate a report based on the user's
-        input. The solution was far from being even remotely pretty, but it got
-        the job done.
-      </p>
-      <p>
-        During this experience, I realized that I enjoyed the whole process. I
-        enjoyed the continuous learning and problem solving, constantly trying
-        to find ways to improve the application, either by implementing new
-        features or by improving the existing ones. Something that struct me as
-        particularly rewarding was teaching my fellow students how to use the
-        system and seeing them use it in their daily work, knowing that I had
-        created something that was useful to others.
-      </p>
-      <p>
-        Upon graduation, I decided to explore software development further, and
-        this path continues to excite and inspire me to this day.
-      </p>
+      </div>
+      </div>
     </Section>
   );
 }

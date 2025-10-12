@@ -1,36 +1,26 @@
 import Link from "@/app/ui/link/link";
 import styles from "./header.module.css";
-import me from "@/../public/images/me.png";
-import Image from "next/image";
+import { LuDownload } from "react-icons/lu";
+import { useState } from "react";
 
 export default function Header() {
   return (
     <header id="header" className={styles.header}>
-      <div className={styles.hero}>
-        <div className={styles.text}>
-          <h1>
-            Hey, my name is <span>Mikael</span>
-          </h1>
-          <p>I'm studying software development at XAMK.</p>
-          <p>
-            My interests are in full-stack development for web and mobile
-            platforms in addition to leveraging Microsoft Azure.
+      <div className={styles.text}>
+        <h1>Hello!{' '}<span className={styles.nowrap}>I'm Mikael</span>,<br />a full-stack developer</h1>
+        <p style={{ marginBottom: "0.8rem" }}>
+          I create and build modern cloud-native applications using technologies like .NET, Azure, and React/Angular.
           </p>
-          <div className={styles.actions}>
-            <Link variant="primary" href="#contact">
-              Contact
-            </Link>
-            <Link variant="secondary" href="#about">
-              About me
-            </Link>
-          </div>
+          <p>
+          Currently I'm developing enterprise applications at
+          KajaPro Oy.
+          </p>
+        <div className={styles.actions}>
+          <Link variant="secondary" href="resume.pdf" blank>
+          <LuDownload />
+            View resume
+          </Link>
         </div>
-        <Image
-          className={styles.image}
-          src={me}
-          alt="Headshot of Mikael"
-          priority
-        />
       </div>
     </header>
   );

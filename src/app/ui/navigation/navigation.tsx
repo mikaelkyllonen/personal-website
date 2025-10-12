@@ -5,19 +5,20 @@ import useOutsideClick from "./useOutsideClick";
 import useToggleNav from "./useToggleNav";
 import HamburgerButton from "./hamburger-button";
 import Link from "next/link";
+import LinkComponent from "../link/link";
+import { LuDownload } from "react-icons/lu";
 
 const NAV_LIST_LINKS = [
-  { href: "#about", text: "About me" },
-  { href: "#projects", text: "Projects" },
+  { href: "#about", text: "About" },
+  { href: "#experience", text: "Experience" },
   { href: "#contact", text: "Contact" },
 ];
 
 interface Props {
   logoOnly?: boolean;
-  tint?: boolean;
 }
 
-export default function Navigation({ logoOnly, tint }: Props) {
+export default function Navigation({ logoOnly }: Props) {
   const [isOpen, handleToggleNav, handleCloseNav] = useToggleNav(false);
 
   // Close the nav when clicking outside of it
@@ -40,7 +41,7 @@ export default function Navigation({ logoOnly, tint }: Props) {
       <nav className={styles.nav} aria-label="navigation">
         <div className={styles.logo}>
           <Link className={styles.nav__link} href="/" aria-label="home">
-            MK
+            Mikael Kyllönen
           </Link>
         </div>
       </nav>
@@ -50,12 +51,13 @@ export default function Navigation({ logoOnly, tint }: Props) {
   return (
     <nav
       ref={ref}
-      className={`${styles.nav} ${tint ? styles.tint : ""}`}
+      className={`${styles.nav}`}
       aria-label="navigation"
     >
       <div className={styles.logo}>
-        <Link className={styles.nav__link} href="/" aria-label="home">
-          MK
+        <Link className={styles.logo_link}
+         href="/" aria-label="home">
+          Mikael Kyllönen
         </Link>
       </div>
       <HamburgerButton isNavOpen={isOpen} toggleIsNavOpen={handleToggleNav} />
@@ -67,7 +69,20 @@ export default function Navigation({ logoOnly, tint }: Props) {
         id="navigation"
         className={`${styles.aside} ${isOpen ? styles.open : ""}`}
       >
-        <ul className={styles.nav__list}>{listItems}</ul>
+        <ul className={styles.nav__list}>{listItems}
+          <li>
+        <LinkComponent
+        // customStyle={{ padding: "0.6rem 1.2rem", fontSize: "1.4rem", fontWeight: "var(--font-weight-regular)" }}
+        variant="secondary"
+        href={"resume.pdf"}
+        blank
+        // onClick={handleCloseNav}
+      >
+        <LuDownload />
+        Resume
+      </LinkComponent>
+      </li>
+        </ul>
       </nav>
     </nav>
   );

@@ -8,6 +8,7 @@ interface Props {
   blank?: boolean;
   routerLink?: boolean;
   children: React.ReactNode;
+  customStyle?: React.CSSProperties;
 }
 
 export default function Link({
@@ -15,6 +16,7 @@ export default function Link({
   href,
   customClass,
   blank,
+  customStyle,
   children,
 }: Props) {
   const linkStyles =
@@ -30,6 +32,7 @@ export default function Link({
     <NextLink
       href={href}
       className={`${linkStyles} ${customClass ?? ""}`}
+      style={customStyle}
       {...(blank && blankAttributes)}
     >
       {children}
