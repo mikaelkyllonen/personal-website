@@ -53,5 +53,5 @@
 
 .tertiary:hover,
 .tertiary:active {
-  color: var(--color-primary-shade);
+  color: var(--color-accent2);
 }
