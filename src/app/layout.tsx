@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   },
   description:
     "Full Stack Developer with a passion for solving challenges and delivering high-quality, scalable applications.",
+  openGraph: {
+    title: "Mikael Kyllönen",
+    siteName: "Mikael Kyllönen",
+    description: "Full Stack Developer with a passion for solving challenges and delivering high-quality, scalable applications.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
